@@ -24,7 +24,7 @@ document.getElementById("upload-form").addEventListener("submit", async (e) => {
   formData.append("image", file);
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/api/identify", {
+    const response = await fetch("https://sneaker-agent.onrender.com/api/identify", {
       method: "POST",
       body: formData,
     });
