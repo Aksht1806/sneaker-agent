@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sneaker-agent
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: AIzaSyAF4H2y4YBEB75OH8BXgXQEt9FK4v8tNdI
+        sync: false
